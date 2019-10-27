@@ -1,0 +1,88 @@
+.tp-card {
+    max-width: 400px;
+ }
+ .tp-header-image {
+    background-image: url('https://www.tutorialspoint.com/materialize/src/html5-mini-logo.jpg');
+    background-size: cover;
+ }
+ .example-card {
+    max-width: 700px;
+    width: 100%;
+    margin: 10px auto;
+    margin-top: 5%;
+    padding-bottom: 5%; 
+    padding-top: 0pt;
+    padding-left: 0%;
+    padding-right: 0%;
+    border: 3px;
+    
+  }
+  .card-const{
+    margin-top: 10%;
+    margin-left: 5%;
+  margin-right: 5%;
+    padding-bottom: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .inputfile {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+  .divv{
+      align:right
+  }
+  #wrap {
+    margin: 0 auto;
+    width: 200px;
+    margin-left: 60%;
+  }
+  img{
+    max-width:180px;
+  }
+  input[type=file]{
+  padding:10px;
+  background:#2d2d2d;}
+  .label{
+      margin-right: 60%;
+  }
+  div.settings {
+    display:grid;
+    grid-template-columns: max-content max-content;
+    grid-gap:5px;
+}
+div.settings label       { text-align:right; }
+div.settings label:after { content: ":"; }
+
+
+
+  .btn{
+      margin-right: 5%;
+      margin-top: 5px;
+  }
+.card-etat{
+    margin-top: 10%;
+    margin-left: 5%;
+  margin-right: 5%;
+    padding-bottom: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .mat-card-content{
+      margin: 5%;
+  }
+  .mat-card-headerr {
+    background-color: rgb(248, 242, 242);
+    margin-bottom: 5%;
+  }
+
+  .mat-card-headerrr {
+   padding: 0%;
+   margin: 0%;
+   background-color: rgb(16, 92, 192);
+  }
+  

@@ -1,0 +1,86 @@
+<mat-card class="example-card">
+
+  <mat-card-header class="mat-card-headerr">
+
+    App
+   
+  </mat-card-header>
+
+
+  <div>
+      <mat-card class="card-etat">
+      
+          <mat-card-header class="mat-card-headerrr" > <label for="">Etat civil</label> </mat-card-header>
+          <div class="col-md-6 offset-md-3" id="wrap">
+                      
+              <div class="form-group" *ngIf="!fileUploadProgress">
+                  
+                  <input type="file" name="file" id="file" class="inputfile" (change)="fileProgress($event)" />
+                  <label for="file">Choose a image</label>
+              </div>
+              <div *ngIf="fileUploadProgress">
+                  Upload progress: {{ fileUploadProgress }}
+              </div>
+              <div class="image-preview mb-3" *ngIf="previewUrl">
+                  <img [src]="previewUrl" height="100" />                 
+              </div>
+            </div>
+          <mat-card-content>
+            
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Nom</label>
+                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Nom">
+                                </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">Prenom</label>
+                    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Enter Prenom">
+                  </div>
+                  <div class="form-group">
+                      <label for="exampleInputPassword1">Date de Naissence</label>
+                      <input type="Date" class="form-control" id="exampleInputPassword1" placeholder="Enter Date de Naissence">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect1">Sexe</label>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                          <option>Homme</option>
+                          <option>Femme</option>
+                          
+                        </select>
+                      </div>
+                 
+         
+          </mat-card-content>
+        </mat-card>
+         
+  </div>
+  
+  <mat-card class="card-const">
+    <mat-card-header class="mat-card-headerrr"><label color="red" for="">Consultation</label> </mat-card-header>
+    <mat-card-content>
+
+        <div class="form-group">
+            <label for="exampleFormControlSelect1">Groupe Sanguin</label>
+            <select class="form-control" id="exampleFormControlSelect1">
+              <option>O+</option>
+              <option>B+</option>
+              <option>A+</option>
+              <option>O-</option>
+              <option>B-</option>
+            </select>
+          </div>
+          <div class="form-group">
+              <label for="exampleInputPassword1">Poids</label>
+              <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Kg">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPassword1">Taille</label>
+                <input type="text" class="form-control" id="exampleInputPassword1" placeholder="cm">
+              </div>
+              <div class="form-group">
+                  <label for="exampleFormControlTextarea1">Observations</label>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+    </mat-card-content>
+  </mat-card>
+  <button type="submit"  class="btn btn-primary" style="float: right;">Submit</button>
+</mat-card>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<title>Personne index</title>
+
+{% block body %}
+    <h1 align="center">Personne index</h1>
+
+        <table align="center">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nom</th>
+                <th>Prenom</th>
+                <th>Date_naissence</th>
+                <th>Image</th>
+                <th>Sexe</th>
+                </br>
+                </br>
+                </br>
+                </br>
+                </br>
+                <th>Groupe_sanguin</th>
+                <th>Poid</th>
+                <th>Taille</th>
+                <th>Observation</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for personne in personnes %}
+            <tr>
+                <td>{{ personne.id }}</td>
+                <td>{{ personne.nom }}</td>
+                <td>{{ personne.prenom }}</td>
+                <td>{{ personne.dateNaissence ? personne.dateNaissence|date('Y-m-d') : '' }}</td>
+                <td>{{ personne.image }}</td>
+                <td>{{ personne.sexe }}</td>
+                <td>{{ personne.groupeSanguin }}</td>
+                <td>{{ personne.poid }}</td> 
+                <td>{{ personne.taille }} </td>
+                <td>{{ personne.observation }}</td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="11">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+<a href="{{ path('personne_new') }}">Ajouter</a>
+    
+{% endblock %}
